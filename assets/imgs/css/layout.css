@@ -32,6 +32,7 @@ header {
   background-color: #fbf7e3;
   align-items: center;
   height: 9rem;
+  width: 100%;
 }
 header > a {
   border: none;
@@ -77,7 +78,7 @@ header > a {
   background-color: #fbf7e3;
   max-width: fit-content;
   overflow: hidden;
-  width: 44%;
+  width: 47%;
 }
 
 .cards img {
@@ -122,17 +123,23 @@ article {
   border-radius: 40px;
   padding-inline: 2rem;
   padding-block: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .article {
   display: flex;
   flex-direction: column;
 }
+.article h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
 article img {
+  margin-top: 1.5rem;
   width: 100%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   body {
     line-height: 1rem;
     font-size: 0.8rem;
@@ -146,5 +153,79 @@ article img {
   article img {
     margin-right: 1rem;
     min-width: 50%;
+  }
+}
+@media screen and (max-width: 575px) {
+  body {
+    margin-inline: 1rem;
+  }
+  header {
+    flex-wrap: wrap;
+    border-radius: 5rem;
+    height: fit-content;
+    padding: 1rem;
+    justify-content: space-evenly;
+  }
+  header div {
+    order: -1;
+    width: 75%;
+  }
+  header > a {
+    width: 36%;
+    text-align: center;
+    margin: 1rem;
+  }
+  .shopping {
+    justify-content: center;
+  }
+  .cards {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-bigger {
+    display: flex;
+    justify-content: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding-inline: 1rem;
+    font-size: 0.5rem;
+  }
+  header a {
+    font-size: 0.6rem;
+    margin-top: 2rem;
+  }
+  .shopping {
+    margin-top: 1rem;
+    order: -1;
+    padding-block: 0.8rem;
+  }
+  .shopping a {
+    font-size: 0.8rem;
+    padding-inline: 0;
+
+    margin-top: 0;
+  }
+  .shopping img {
+    width: 30px;
+    margin-right: 0;
+  }
+  main {
+    margin-block: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+  .cards {
+    width: 24%;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
