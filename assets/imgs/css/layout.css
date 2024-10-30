@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+main {
+  margin-inline: 1.5rem;
+  margin-top: 3rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+h1 {
+  color: #762609;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-block: 1rem;
+}
+main > h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #762609;
+  font-weight: 900;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fbf7e3;
+  align-items: center;
+  height: 9rem;
+}
+header > a {
+  border: none;
+  padding: 1.3rem;
+  text-decoration: none;
+  color: #762609;
+  background-color: #f3df85;
+  border-radius: 40px;
+}
+.shopping {
+  display: flex;
+  background-color: #f3df85;
+  border-radius: 55px;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 0.8rem;
+  padding-block: 1.2rem;
+}
+.shopping img {
+  margin-right: 1rem;
+}
+.shopping a {
+  text-decoration: none;
+  color: #762609;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-inline: 1rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.cards {
+  margin-top: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #fbf7e3;
+  max-width: fit-content;
+  overflow: hidden;
+  width: 300px;
+}
+
+.cards img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description-cards {
+  margin-top: 0.8rem;
+  display: flex;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-cards span {
+  font-weight: 100;
+}
+
+.description-cards p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.cards button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #f3df85;
+  color: #762609;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+article {
+  background-color: #fbf7e3;
+  color: #762609;
+  border-radius: 40px;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  article {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95%;
+    padding-top: 1rem;
+  }
+  article img {
+    margin-right: 1rem;
+    min-width: 50%;
+  }
+}

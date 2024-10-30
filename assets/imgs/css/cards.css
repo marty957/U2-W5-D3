@@ -1,0 +1,45 @@
+body {
+  color: #762609;
+}
+.cards {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #fbf7e3;
+  max-width: fit-content;
+  overflow: hidden;
+  width: 300px;
+}
+
+.cards img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description-cards {
+  margin-top: 0.8rem;
+  display: flex;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-cards span {
+  font-weight: 100;
+}
+
+.description-cards p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.cards button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #f3df85;
+  color: #762609;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
